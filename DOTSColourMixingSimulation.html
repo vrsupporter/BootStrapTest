@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DOTS Colour Mixing Simulation - PM_CODE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <link href="PM_Favicon.png" rel="icon" type="image/png">
+  </head>
+  <body>
+      <div id="fixedBackground"></div>
+      <header>
+          <nav>
+              <div id="hamburgerID">
+                  <div class="hamburgerIconHolder">
+                      <a href="javascript:void(0);" class="hamburgerIcon" onclick="ToggleClass('hamburgerID', 'hamburgerDropdownEnabled')">
+                          <img src="MobileNavIcon.png" height="25" width="25">
+                      </a>
+                  </div>
+                  <a href="index.html" class="selected">Home</a>
+                  <div id="projectDropdownHolder" class="dropdownHolder">
+                      <button class="dropdownOption" onclick="ToggleClassIfNoHoverSupport('projectDropdownHolder', 'clickOpened')">
+                          Projects
+                      </button>
+                      <div class="subOptionHolder">
+                          <a href="InventoryWebApp.html" class="subOption">Inventory Web App</a>
+                          <a href="DOTSColourMixingSimulation.html" class="subOption">DOTS Colour Mixing Simulation</a>
+                          <a href="FPSIntegrationTool.html" class="subOption">FPS Integration Tool</a>
+                          <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <main>
+          <section class="videoSection">
+              <h1>DOTS Colour Mixing Simulation</h1>
+              <div class="videoContainer">
+                  <div>
+                      <iframe width="1280" height="720" src="https://www.youtube.com/embed/vpZ_GOptYa0" title="Colour Mixing Simulation | Unity DOTS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </section>
+          <section class="semiOpaqueBG">
+              <p>
+                  To experiment with optimisation and multithreading techniques in Unity and C#, I created a sandbox project that incorporates the Data Oriented Technology Stack (DOTS), which involves the Entity Component System, Job System and Burst Compiler.
+              </p>
+              <p>
+                  The project features a scene where hundreds of spherical entities of a certain colour are instanced. When they contact each other, they gradually exchange their colours to simulate mixing.
+              </p>
+              <p>
+                  The simulation’s multithreaded systems utilise Entity Command Buffers to execute Structural Changes on pre-existing Sync Points and Unmanaged types are involved to support native compiling.
+              </p>
+              <p>
+                  Despite the number of entities in the scene, the mentioned techniques allowed the simulation to run well within the approximate 4ms (for 240Hz displays) frame budget when accounting for the VSync portion of the profiler graph as shown below.
+              </p>
+              <div class="centreImage">
+                  <img src="DOTSProfile.png" height="200" width="742">
+              </div>
+          </section>
+      </main>
+      <footer class="semiOpaqueBG">
+          <h2>Contact</h2>
+          <div>
+              <a href="mailto:career.pmcdougall@icloud.com?Subject=PM_CODE%20Contact" class="linkButton">Email</a>
+              <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank" class="linkButton">LinkedIn</a>
+          </div>
+          <p class="copyright">Pierre McDougall © 2020</p>
+      </footer>
+      <script type="text/javascript" src="java.js"></script>
+  </body>
+</html>

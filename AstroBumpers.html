@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AstroBumpers - PM_CODE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <link href="PM_Favicon.png" rel="icon" type="image/png">
+  </head>
+  <body>
+      <div id="fixedBackground"></div>
+      <header>
+          <nav>
+              <div id="hamburgerID">
+                  <div class="hamburgerIconHolder">
+                      <a href="javascript:void(0);" class="hamburgerIcon" onclick="ToggleClass('hamburgerID', 'hamburgerDropdownEnabled')">
+                          <img src="MobileNavIcon.png" height="25" width="25">
+                      </a>
+                  </div>
+                  <a href="index.html" class="selected">Home</a>
+                  <div id="projectDropdownHolder" class="dropdownHolder">
+                      <button class="dropdownOption" onclick="ToggleClassIfNoHoverSupport('projectDropdownHolder', 'clickOpened')">
+                          Projects
+                      </button>
+                      <div class="subOptionHolder">
+                          <a href="InventoryWebApp.html" class="subOption">Inventory Web App</a>
+                          <a href="DOTSColourMixingSimulation.html" class="subOption">DOTS Colour Mixing Simulation</a>
+                          <a href="FPSIntegrationTool.html" class="subOption">FPS Integration Tool</a>
+                          <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <main>
+          <section class="videoSection">
+              <h1>AstroBumpers</h1>
+              <div class="videoContainer">
+                  <div>
+                      <iframe width="1037" height="890" src="https://www.youtube.com/embed/6adC4DXy5oU" title="AstroBumpers Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </section>
+          <section class="semiOpaqueBG">
+              <p>
+                  For my self-employed placement year, I designed, developed and published the mobile game AstroBumpers, which was space-themed and inspired by the arcade game Pong.
+              </p>
+              <p>
+                  As the concept's unfamiliarity complicated the design process, a prototype was created and iterated in GameMaker. The game's development continued in Unity, programmed in C#, visual assets created in Gimp, InkScape and Blender, and audio produced in Audacity and GarageBand.
+              </p>
+              <p style="margin-bottom: 10px">
+                  The mobile game was released on Google Play and App Store for Android and iPhone devices respectively.
+              </p>
+          </section>
+      </main>
+      <footer class="semiOpaqueBG">
+          <h2>Contact</h2>
+          <div>
+              <a href="mailto:career.pmcdougall@icloud.com?Subject=PM_CODE%20Contact" class="linkButton">Email</a>
+              <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank" class="linkButton">LinkedIn</a>
+          </div>
+          <p class="copyright">Pierre McDougall © 2020</p>
+      </footer>
+      <script type="text/javascript" src="java.js"></script>
+  </body>
+</html>

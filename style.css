@@ -1,0 +1,240 @@
+body{
+  font: 100% Arial;
+  background-color: #1c1c1c;
+}
+h1, h2, h3, p, a, li{
+  color: white;
+}
+h1, h2, h3{
+  text-align: center;
+}
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+p, a, li{
+  font-size: 1.3rem;
+}
+section, footer{
+  padding: 20px 40px;
+  
+  margin: 1% auto;  /* auto horizontal margins works with max-width */
+  max-width: 1200px;
+}
+section:first-child {
+  margin-top: 130px;
+}
+footer{
+  text-align: center;
+}
+footer p.copyright{
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* Fixed Background (Mobile Friendly) */
+#fixedBackground{
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-image: url('Background.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* Index Title */
+#indexTitle div{
+  width: 90%;
+  margin: 250px auto 0px;
+}
+#indexTitle h1{
+  font-size: 9rem;
+  text-align: left;
+  margin: 0;
+}
+#indexTitle h2{
+  font-size: 3rem;
+  text-align: left;
+  margin: 40px 0;
+}
+
+/* Qualities Section */
+.qualitiesSection{
+  text-align: left;
+}
+
+/* General */
+.semiOpaqueBG{
+  background: rgba(28, 28, 28, 0.9)
+}
+.centreImage{
+  text-align: center;
+}
+.centreImage img{
+  width: 80%;
+  height: auto;
+}
+
+/* Standard link button */
+a.linkButton{
+  display: inline-block;
+  background-color: #4a9bf0;
+  margin: 5px;
+  padding: 12px;
+  border-radius: 4px;
+  
+  font-weight: bold;
+  text-decoration: none;
+  
+  transition: background 0.5s;
+}
+a.linkButton:hover {
+  background-color: #30bbff;
+}
+
+/* Project link button */
+.projectButton{
+  position: relative;
+  height: 250px;
+  margin: 1% 1%;
+  border: 2px solid transparent;
+  transition: border 0.25s;
+}
+.projectButton:hover {
+  border: 2px solid white;
+}
+.projectButton img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.projectButton h3{
+  position: absolute;
+  overflow: hidden;
+  bottom: 10px;
+  right: 10%;
+  margin: 0;
+  font-size: 3rem;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.projectButton .hoverTint{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #2f2f2f;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.projectButton:hover .hoverTint{
+  opacity: 0.6;
+}
+.projectButton:hover h3{
+  opacity: 1;
+}
+
+/* Video Container */ 
+.videoContainer{
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.videoContainer div{
+  position: relative;
+  width: 100%;
+  padding-top: 64%;
+}
+.videoContainer iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* HEIGHT RULES */
+@media (max-height: 1000px){
+  #indexTitle div{
+  margin: 250px auto 0px;
+  } 
+}
+@media (max-height: 800px){
+  #indexTitle div{
+  margin: 200px auto 0px;
+  } 
+}
+@media (max-height: 600px){
+  #indexTitle div{
+  margin: 100px auto 0px;
+  }
+}
+
+/* WIDTH RULES */
+@media (max-width: 1350px){
+  section, footer{
+  margin: 1% 2%;
+  max-width: none;
+  }
+}
+@media (max-width: 1000px){
+  section, footer{
+  padding: 20px 10%;
+  }
+  .videoContainer{
+    width: 85%;
+    margin: 0 auto;
+  }
+  #indexTitle div{
+    width: 100%;
+  }
+  #indexTitle h1{
+    font-size: 7rem;
+  }
+  #indexTitle h2{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 750px){
+  html{                 /* ??? why does this work here? */
+    font-size: 0.8rem;
+  }
+  .projectButton{
+    height: 175px;
+  }
+  .projectButton h3{
+    font-size: 2.5rem;
+    right: 5%;
+  }
+  .videoContainer{
+  width: 100%;
+}
+@media (max-width: 500px){
+  .projectButton{
+    height: 125px;
+  }
+  .projectButton h3{
+    font-size: 1.75rem;
+    right: 2%;
+    left: 10%;
+  }
+}
+@media (max-width: 400px){
+  .projectButton h3{
+    font-size: 1.5rem;
+  }
+}

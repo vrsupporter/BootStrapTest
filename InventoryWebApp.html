@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inventory Web App - PM_CODE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="NavBarStyle.css" rel="stylesheet">
+    <link href="PM_Favicon.png" rel="icon" type="image/png">
+  </head>
+  <body>
+      <div id="fixedBackground"></div>
+      <header>
+          <nav>
+              <div id="hamburgerID">
+                  <div class="hamburgerIconHolder">
+                      <a href="javascript:void(0);" class="hamburgerIcon" onclick="ToggleClass('hamburgerID', 'hamburgerDropdownEnabled')">
+                          <img src="MobileNavIcon.png" height="25" width="25">
+                      </a>
+                  </div>
+                  <a href="index.html" class="selected">Home</a>
+                  <div id="projectDropdownHolder" class="dropdownHolder">
+                      <button class="dropdownOption" onclick="ToggleClassIfNoHoverSupport('projectDropdownHolder', 'clickOpened')">
+                          Projects
+                      </button>
+                      <div class="subOptionHolder">
+                          <a href="InventoryWebApp.html" class="subOption">Inventory Web App</a>
+                          <a href="DOTSColourMixingSimulation.html" class="subOption">DOTS Colour Mixing Simulation</a>
+                          <a href="FPSIntegrationTool.html" class="subOption">FPS Integration Tool</a>
+                          <a href="AstroBumpers.html" class="subOption">AstroBumpers</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <main>
+          <section class="videoSection">
+              <h1>Inventory Web App</h1>
+              <div class="videoContainer">
+                  <div>
+                      <iframe width="1037" height="583" src="https://www.youtube.com/embed/ERPDDxMrEXs" title="Inventory Web App" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </section>
+          <section class="semiOpaqueBG">
+              <p>
+                  This item management application aims to track the possession of items along with their accompanying information and attributes, while involving an account feature to restrict such data to the authenticated user.
+              </p>
+              <p>
+                  A collection of aspects that resemble this system are as follows:
+              </p>
+              <p>
+                  <b>Frontend</b> - The client receives webpages with Razor-generated HTML, Bootstrap styling and JavaScript Fetch API.
+              </p>
+              <p>
+                  <b>Web Application</b> - Developed with ASP.NET Core MVC with C#, a highly scalable, widely-used industry standard solution adopted to interact between the client and supportive services by separating the functionality into Model, DTO, View and Controller components.
+              </p>
+              <p>
+                  <b>SQL Container</b> - Provides a relational database service for storing user account credentials for authentication and authorisation.
+              </p>
+              <p>
+                  <b>MongoDB Container</b> - Holds a non-relational database to manage item records, where each can possess different fields due to the dynamics of their attribute rating collection.
+              </p>
+              <p>
+                  <b>Minio Container</b> - Stores thumbnail images in a bucket accessible with record-specific keys. Such compartmentalisation from the database services mitigates a performance slowdown from large files.
+              </p>
+              <p>
+                  <b>Docker Compose</b> - Controls how each container is configured and how they are deployed together.
+              </p>
+          </section>
+      </main>
+      <footer class="semiOpaqueBG">
+          <h2>Contact</h2>
+          <div>
+              <a href="mailto:career.pmcdougall@icloud.com?Subject=PM_CODE%20Contact" class="linkButton">Email</a>
+              <a href="https://www.linkedin.com/in/pierre-mcdougall/" target="_blank" class="linkButton">LinkedIn</a>
+          </div>
+          <p class="copyright">Pierre McDougall © 2020</p>
+      </footer>
+      <script type="text/javascript" src="java.js"></script>
+  </body>
+</html>
