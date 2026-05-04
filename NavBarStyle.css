@@ -94,7 +94,7 @@ nav .dropdownHolder .subOption:hover {
 }
 
 /* WIDTH RULES */
-@media (max-width: 775px) {
+@media (hover: none) {
   nav a {
     display: none;
     float: none;
@@ -147,7 +147,7 @@ nav .dropdownHolder .subOption:hover {
     margin-left: 20px;
     width: auto;
   }
-  nav .hamburgerDropdownEnabled .dropdownHolder:hover .subOptionHolder {
+  nav .hamburgerDropdownEnabled .dropdownHolder.clickOpened .subOptionHolder {
     display: block;
     border: 2px solid #101010;
     border-top: none;
